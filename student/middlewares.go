@@ -8,9 +8,7 @@ var (
 )
 
 // StaleDataError сообщает, что данные об изменении курса устарели.
-type StaleDataError struct {
-	Rate ExchangeRate
-}
+type StaleDataError struct{}
 
 func (e *StaleDataError) Error() string {
 	panic("not implemented")
